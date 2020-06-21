@@ -1,0 +1,7 @@
+.clang-format
+*.o
+.vscode/*
+.vs/*
+Debug/*
+*.vcx*
+*.sln

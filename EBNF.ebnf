@@ -1,0 +1,6 @@
+source     = (equation (equation \n)*)?
+equation   = identifier ("::="|"=") either
+either     = primary ("|" primary)*
+primary    = ((identifier | "" string "" | "(" either ")") ("?" | "*" | "+")?)+
+identifier = a-zA-Z_(a-zA-Z_0-9)*
+string     = (ダブルクォーテーション以外の文字|"""")+
